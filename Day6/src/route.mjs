@@ -1,5 +1,5 @@
 import express from 'express'
-import { addProduct } from './controller/productController.mjs'
+import { addProduct, addProducts, readProducts, findById } from './controller/productController.mjs'
 
 const router = express.Router()
 
@@ -8,5 +8,8 @@ router.get('/', (req,res) => {
 })
 
 router.post('/add', addProduct)
+router.post('/addall', addProducts)
+router.get('/find', readProducts)
+router.get('/product/:id', findById)
 
 export default router
