@@ -1,0 +1,17 @@
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "this is my learning first app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "learning"
+  ],
+  "author": "fsd class",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
