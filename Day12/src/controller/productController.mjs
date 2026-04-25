@@ -24,7 +24,7 @@ const getProducts = async (req, res) => {
 
         const products = await productModel.aggregate([
             {
-                $match: { stock: { $gt: 50 } }
+                $match: { stock: { $gt: 0 } }
             },
             {
                 $project: {
